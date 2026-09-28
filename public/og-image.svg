@@ -1,0 +1,219 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+    
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="50%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#b45309" />
+    </linearGradient>
+
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f87171" />
+      <stop offset="100%" stop-color="#dc2626" />
+    </linearGradient>
+
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#67e8f9" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4ade80" />
+      <stop offset="100%" stop-color="#16a34a" />
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="pixelGrid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#334155" stroke-width="1" stroke-opacity="0.25"/>
+    </pattern>
+
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="4" dy="4" stdDeviation="0" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
+
+    <filter id="deepGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- 1. Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)" />
+  <rect width="1200" height="630" fill="url(#pixelGrid)" />
+
+  <!-- Ambient Glow Circles -->
+  <circle cx="200" cy="180" r="160" fill="#dc2626" opacity="0.12" filter="url(#deepGlow)" />
+  <circle cx="1000" cy="400" r="220" fill="#3b82f6" opacity="0.12" filter="url(#deepGlow)" />
+  <circle cx="600" cy="280" r="180" fill="#f59e0b" opacity="0.1" filter="url(#deepGlow)" />
+
+  <!-- 2. Retro Outer Border Frame -->
+  <rect x="24" y="24" width="1152" height="582" rx="16" fill="none" stroke="#334155" stroke-width="4" />
+  <rect x="32" y="32" width="1136" height="566" rx="12" fill="none" stroke="#f59e0b" stroke-width="2" stroke-dasharray="12 6" opacity="0.7"/>
+
+  <!-- Corner Rivets / Pixel Accents -->
+  <rect x="40" y="40" width="12" height="12" fill="#fbbf24"/>
+  <rect x="1148" y="40" width="12" height="12" fill="#fbbf24"/>
+  <rect x="40" y="578" width="12" height="12" fill="#fbbf24"/>
+  <rect x="1148" y="578" width="12" height="12" fill="#fbbf24"/>
+
+  <!-- 3. Top Kicker Badge -->
+  <g transform="translate(600, 68)" text-anchor="middle">
+    <rect x="-180" y="-18" width="360" height="36" rx="8" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <text y="6" font-family="'Press Start 2P', monospace, sans-serif" font-size="11" font-weight="bold" fill="#fde047" letter-spacing="2">
+      ★ CLASSIC 8-BIT BROWSER RPG ★
+    </text>
+  </g>
+
+  <!-- 4. Main Titles -->
+  <g transform="translate(600, 160)" text-anchor="middle">
+    <!-- Drop Shadow -->
+    <text y="6" font-family="'Press Start 2P', monospace, sans-serif" font-size="52" font-weight="900" fill="#000000" letter-spacing="4">
+      POKÉWORLD
+    </text>
+    <text y="0" font-family="'Press Start 2P', monospace, sans-serif" font-size="52" font-weight="900" fill="url(#goldGrad)" letter-spacing="4">
+      POKÉWORLD
+    </text>
+  </g>
+
+  <g transform="translate(600, 218)" text-anchor="middle">
+    <text y="4" font-family="'Press Start 2P', monospace, sans-serif" font-size="28" font-weight="bold" fill="#000000" letter-spacing="6">
+      ADVENTURE
+    </text>
+    <text y="0" font-family="'Press Start 2P', monospace, sans-serif" font-size="28" font-weight="bold" fill="url(#cyanGrad)" letter-spacing="6">
+      ADVENTURE
+    </text>
+  </g>
+
+  <!-- Subtitle Tagline -->
+  <text x="600" y="258" text-anchor="middle" font-family="'Outfit', sans-serif" font-size="18" font-weight="600" fill="#94a3b8" letter-spacing="3">
+    EXPLORE OVERWORLD • CATCH WILD POKÉMON • DEFEAT GYM LEADERS
+  </text>
+
+  <!-- 5. Central Gameplay HUD Box -->
+  <g transform="translate(180, 286)">
+    <!-- Main HUD frame -->
+    <rect width="840" height="200" rx="14" fill="#020617" stroke="#334155" stroke-width="3" filter="url(#shadow)" />
+    <rect x="6" y="6" width="828" height="188" rx="10" fill="#090d16" />
+
+    <!-- Left Box: Wild Pokémon Battle Preview -->
+    <g transform="translate(24, 20)">
+      <rect width="380" height="148" rx="8" fill="#0f172a" stroke="#1e293b" stroke-width="2"/>
+      
+      <!-- Enemy Status Card -->
+      <g transform="translate(20, 20)">
+        <text x="0" y="16" font-family="'Press Start 2P', monospace" font-size="12" fill="#ffffff">PIKACHU</text>
+        <text x="280" y="16" font-family="'Press Start 2P', monospace" font-size="10" fill="#facc15">Lv. 15</text>
+        
+        <!-- HP Bar Container -->
+        <rect x="0" y="28" width="340" height="18" rx="4" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+        <text x="6" y="41" font-family="'Press Start 2P', monospace" font-size="8" fill="#f87171">HP</text>
+        <rect x="36" y="32" width="294" height="10" rx="2" fill="#22c55e"/>
+
+        <g transform="translate(0, 60)">
+          <!-- Pixel Poké Ball Graphic -->
+          <circle cx="24" cy="24" r="22" fill="#ffffff" stroke="#000000" stroke-width="3"/>
+          <path d="M 2 24 A 22 22 0 0 1 46 24 Z" fill="#ef4444" stroke="#000000" stroke-width="2"/>
+          <line x1="2" y1="24" x2="46" y2="24" stroke="#000000" stroke-width="4"/>
+          <circle cx="24" cy="24" r="7" fill="#ffffff" stroke="#000000" stroke-width="3"/>
+          <circle cx="24" cy="24" r="3" fill="#000000"/>
+
+          <text x="60" y="18" font-family="'Outfit', sans-serif" font-size="14" font-weight="700" fill="#e2e8f0">
+            Wild Encounter Active!
+          </text>
+          <text x="60" y="36" font-family="'Outfit', sans-serif" font-size="12" fill="#94a3b8">
+            Route 1 Grass • Real PokeAPI Stats
+          </text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Right Box: Classic 4-Option Battle Menu -->
+    <g transform="translate(436, 20)">
+      <rect width="380" height="148" rx="8" fill="#0f172a" stroke="#1e293b" stroke-width="2"/>
+
+      <!-- 4 Action Buttons -->
+      <!-- FIGHT Button -->
+      <g transform="translate(18, 18)">
+        <rect width="164" height="48" rx="6" fill="#dc2626" stroke="#f87171" stroke-width="2" filter="url(#shadow)"/>
+        <text x="82" y="29" text-anchor="middle" font-family="'Press Start 2P', monospace" font-size="12" font-weight="bold" fill="#ffffff">
+          ⚔ FIGHT
+        </text>
+      </g>
+
+      <!-- BAG Button -->
+      <g transform="translate(198, 18)">
+        <rect width="164" height="48" rx="6" fill="#d97706" stroke="#fbbf24" stroke-width="2" filter="url(#shadow)"/>
+        <text x="82" y="29" text-anchor="middle" font-family="'Press Start 2P', monospace" font-size="12" font-weight="bold" fill="#ffffff">
+          🎒 BAG
+        </text>
+      </g>
+
+      <!-- POKEMON Button -->
+      <g transform="translate(18, 80)">
+        <rect width="164" height="48" rx="6" fill="#16a34a" stroke="#4ade80" stroke-width="2" filter="url(#shadow)"/>
+        <text x="82" y="29" text-anchor="middle" font-family="'Press Start 2P', monospace" font-size="11" font-weight="bold" fill="#ffffff">
+          ⚡ POKÉMON
+        </text>
+      </g>
+
+      <!-- RUN Button -->
+      <g transform="translate(198, 80)">
+        <rect width="164" height="48" rx="6" fill="#2563eb" stroke="#60a5fa" stroke-width="2" filter="url(#shadow)"/>
+        <text x="82" y="29" text-anchor="middle" font-family="'Press Start 2P', monospace" font-size="12" font-weight="bold" fill="#ffffff">
+          🏃 RUN
+        </text>
+      </g>
+    </g>
+  </g>
+
+  <!-- 6. Bottom Highlights / Feature Badges -->
+  <g transform="translate(600, 526)" text-anchor="middle">
+    <!-- 4 Feature Pills -->
+    <g transform="translate(-390, 0)">
+      <rect x="-105" y="-16" width="210" height="32" rx="16" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+      <text y="4" font-family="'Outfit', sans-serif" font-size="13" font-weight="700" fill="#f8fafc">
+        🗺️ Tile Overworld
+      </text>
+    </g>
+
+    <g transform="translate(-130, 0)">
+      <rect x="-105" y="-16" width="210" height="32" rx="16" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+      <text y="4" font-family="'Outfit', sans-serif" font-size="13" font-weight="700" fill="#f8fafc">
+        ⚔️ Real Turn Battles
+      </text>
+    </g>
+
+    <g transform="translate(130, 0)">
+      <rect x="-105" y="-16" width="210" height="32" rx="16" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+      <text y="4" font-family="'Outfit', sans-serif" font-size="13" font-weight="700" fill="#f8fafc">
+        🏆 Gym Leaders &amp; Badges
+      </text>
+    </g>
+
+    <g transform="translate(390, 0)">
+      <rect x="-105" y="-16" width="210" height="32" rx="16" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+      <text y="4" font-family="'Outfit', sans-serif" font-size="13" font-weight="700" fill="#f8fafc">
+        📱 Mobile Touch &amp; D-Pad
+      </text>
+    </g>
+  </g>
+
+  <!-- 7. Footer Credits & URL -->
+  <g transform="translate(70, 580)">
+    <text font-family="'Outfit', sans-serif" font-size="12" fill="#64748b">
+      A Pokémon Fan Game Project • Powered by PokeAPI • No DB Required
+    </text>
+  </g>
+
+  <g transform="translate(1130, 580)" text-anchor="end">
+    <text font-family="'Press Start 2P', monospace" font-size="9" fill="#e2e8f0" opacity="0.8">
+      POKEWORLD ADVENTURE
+    </text>
+  </g>
+</svg>

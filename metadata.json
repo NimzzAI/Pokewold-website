@@ -1,0 +1,6 @@
+{
+  "name": "PokéWorld Adventure",
+  "description": "Playable classic Pokémon-style pixel RPG game in the browser with tile-based exploration, wild encounters, and gym battles powered by PokeAPI.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
